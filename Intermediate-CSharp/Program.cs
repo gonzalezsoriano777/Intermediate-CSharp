@@ -19,6 +19,14 @@ namespace Intermediate_CSharp
                 LastName = "Gonzalez"
             };
 
+            // gives the points for both X and Y
+            var point = new Point(10, 30);
+            point.Move(null);
+            Console.WriteLine();
+
+
+            Console.WriteLine();
+
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
         }
     }
