@@ -19,7 +19,16 @@ namespace Intermediate_CSharp
                 LastName = "Gonzalez"
             };
 
-            Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
+           // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
+        }
+
+        public int X;
+        public int Y;
+
+        public void Move(int x, int y)
+        {
+            this.X = x;
+            this.Y = y;
         }
     }
 }
