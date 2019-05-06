@@ -19,16 +19,30 @@ namespace Intermediate_CSharp
                 LastName = "Gonzalez"
             };
 
-           // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
-        }
-
-        public int X;
-        public int Y;
-
-        public void Move(int x, int y)
-        {
-            this.X = x;
-            this.Y = y;
+            // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
         }
     }
+
+        public class Point
+        {
+
+            public int X;
+            public int Y;
+
+            public void Move(int x, int y)
+            {
+                this.X = x;
+                this.Y = y;
+            }
+
+            public void Move(Point newLocation)
+            {
+                if(newLocation == null)
+                {
+                    throw new ArgumentNullException("newLocation");
+                }
+
+                Move(newLocation.X, newLocation.Y);
+            }
+        }
 }
