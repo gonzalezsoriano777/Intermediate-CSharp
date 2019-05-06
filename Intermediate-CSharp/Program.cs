@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
-    class Person
+    public class Person
     {
+        public string FirstName;
+        public string LastName;
+
         static void Main(string[] args)
         {
-
-            string person = new Person
+            var person = new Person
             {
-                FirstName = "Griffin",
-                LastName = "Toddler"
+                FirstName = "Hector",
+                LastName = "Gonzalez"
             };
 
+            Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
         }
     }
 }
