@@ -23,26 +23,34 @@ namespace Intermediate_CSharp
         }
     }
 
-        public class Point
+    #region Defensive Programming, points (X & Y) if the value is null we test it with a Argu.NullException that will show us that the variable has no value 
+
+    public class Point
         {
 
             public int X;
             public int Y;
+
+            public Point(int x, int y)
+            {
+                this.X = x;
+                this.Y = y;
+            }
 
             public void Move(int x, int y)
             {
                 this.X = x;
                 this.Y = y;
             }
-
+            
             public void Move(Point newLocation)
             {
                 if(newLocation == null)
-                {
                     throw new ArgumentNullException("newLocation");
-                }
-
-                Move(newLocation.X, newLocation.Y);
+                
+                 Move(newLocation.X, newLocation.Y);
             }
         }
+
+    #endregion
 }
