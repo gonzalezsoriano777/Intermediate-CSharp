@@ -43,6 +43,7 @@ namespace Intermediate_CSharp
                 this.Y = y;
             }
             
+            // problem is tested defensively by throwing an arg. in if location has no value (heads up)
             public void Move(Point newLocation)
             {
                 if(newLocation == null)
