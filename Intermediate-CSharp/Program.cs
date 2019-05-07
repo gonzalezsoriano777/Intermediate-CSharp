@@ -18,15 +18,21 @@ namespace Intermediate_CSharp
     {
         static void Main(string[] args)
         {
-            var person = new Human
+            var human = new Human
             {
                 FirstName = "Hector",
                 LastName = "Gonzalez"
             };
 
+            // set birthdate and print in console
             var birth = new Birth();
             birth.SetBirthDate(new DateTime(2006, 3, 1));
             Console.WriteLine(birth.GetBirthDate());
+
+            // using properties that include getter and setter
+            var person = new Person();
+            person.BirthDate = (new DateTime(1981, 1, 3));
+            Console.WriteLine(person.Age);
 
             // gives the points for both X and Y
             var point = new Point(10, 30);
