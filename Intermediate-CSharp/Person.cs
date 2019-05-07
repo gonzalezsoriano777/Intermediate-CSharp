@@ -14,7 +14,7 @@ namespace Intermediate_CSharp
         {
             get
             { 
-                // getting the initial age of a person based of the date today and the birth date
+                // getting the initial age of a person based of the date today and the birthdate
                 var timeSpan = DateTime.Today - BirthDate;
                 var years = timeSpan.Days / 365;
 
