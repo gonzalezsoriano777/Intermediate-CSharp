@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Intermediate_CSharp
 {
     // Used for Obj. Initializer
-    public class Person
+    public class Human
     {
         public string FirstName;
         public string LastName;
@@ -18,7 +18,7 @@ namespace Intermediate_CSharp
     {
         static void Main(string[] args)
         {
-            var person = new Person
+            var person = new Human
             {
                 FirstName = "Hector",
                 LastName = "Gonzalez"
