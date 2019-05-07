@@ -34,7 +34,7 @@ namespace Intermediate_CSharp
             person.BirthDate = (new DateTime(1981, 1, 3));
             Console.WriteLine(person.Age);
 
-            // used the try method to run lines.. of code and if detected an issue with no value, print to console data to let it know
+            // used the try method to run lines.. of code
 
             try
             {
@@ -49,6 +49,8 @@ namespace Intermediate_CSharp
                 Console.WriteLine("The new points of both (X:{0} & Y:{1})", point.X, point.Y);
 
             }
+
+            // if detected an issue with no value, print to console data to let it know
 
             catch (Exception)
             {
