@@ -36,7 +36,11 @@ namespace Intermediate_CSharp
 
             // gives the points for both X and Y
             var point = new Point(10, 30);
-            point.Move(null);
+            point.Move(new Point(40, 60));
+            Console.WriteLine("The Point of both (X:{0} & Y:{1})", point.X, point.Y);
+
+            point.Move(new Point(100, 200));
+            Console.WriteLine("The new points of both (X:{0} & Y:{1})", point.X, point.Y);
             
 
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
@@ -67,7 +71,7 @@ namespace Intermediate_CSharp
             public void Move(Point newLocation)
             {
                 if(newLocation == null)
-                    throw new ArgumentNullException("newLocationn");
+                    throw new ArgumentNullException("newLocation");
                 
                  Move(newLocation.X, newLocation.Y);
             }
