@@ -36,7 +36,9 @@ namespace Intermediate_CSharp
 
             // gives the points for both X and Y
             var point = new Point(10, 30);
-            point.Move(new Point(40, 60));
+
+            //test ran to see if were able to detect no value once arg. null is implemented
+            point.Move(null);
             Console.WriteLine("The Point of both (X:{0} & Y:{1})", point.X, point.Y);
 
             point.Move(new Point(100, 200));
