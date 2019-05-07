@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
+    // Used for Obj. Initializer
     public class Person
     {
         public string FirstName;
         public string LastName;
+    }
 
+
+    class Program
+    {
         static void Main(string[] args)
         {
             var person = new Person
@@ -62,4 +67,21 @@ namespace Intermediate_CSharp
         }
 
     #endregion
+
+    // Prac. Access Modifiers.. Creating and Grabbing data regarding birthdate
+    public class Birth
+    {
+        private DateTime _birthdate;
+
+        public void SetBirthDate(DateTime birthdate)
+        {
+            _birthdate = birthdate;
+        }
+
+        public DateTime GetBirthDate()
+        {
+            return _birthdate;
+        }
+
+    }
 }
