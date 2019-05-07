@@ -67,7 +67,7 @@ namespace Intermediate_CSharp
             public void Move(Point newLocation)
             {
                 if(newLocation == null)
-                    throw new ArgumentNullException("newLocation");
+                    throw new ArgumentNullException("newLocationn");
                 
                  Move(newLocation.X, newLocation.Y);
             }
