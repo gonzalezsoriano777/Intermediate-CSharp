@@ -34,16 +34,24 @@ namespace Intermediate_CSharp
             person.BirthDate = (new DateTime(1981, 1, 3));
             Console.WriteLine(person.Age);
 
-            // gives the points for both X and Y
-            var point = new Point(10, 30);
+            try
+            {
+                // gives the points for both X and Y
+                var point = new Point(10, 30);
 
-            //test ran to see if were able to detect no value once arg. null is implemented
-            point.Move(null);
-            Console.WriteLine("The Point of both (X:{0} & Y:{1})", point.X, point.Y);
+                //test ran to see if were able to detect no value once arg. null is implemented
+                point.Move(null);
+                Console.WriteLine("The Point of both (X:{0} & Y:{1})", point.X, point.Y);
 
-            point.Move(new Point(100, 200));
-            Console.WriteLine("The new points of both (X:{0} & Y:{1})", point.X, point.Y);
-            
+                point.Move(new Point(100, 200));
+                Console.WriteLine("The new points of both (X:{0} & Y:{1})", point.X, point.Y);
+
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Unexpected error has been detected, no value has been shown..");
+            }
 
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
         }
