@@ -34,6 +34,8 @@ namespace Intermediate_CSharp
             person.BirthDate = (new DateTime(1981, 1, 3));
             Console.WriteLine(person.Age);
 
+            // used the try method to run lines.. of code and if detected an issue with no value, print to console data to let it know
+
             try
             {
                 // gives the points for both X and Y
@@ -53,6 +55,7 @@ namespace Intermediate_CSharp
                 Console.WriteLine("Unexpected error has been detected, no value has been shown..");
             }
 
+            
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
         }
     }
