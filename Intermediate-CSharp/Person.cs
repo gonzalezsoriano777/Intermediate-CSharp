@@ -8,7 +8,7 @@ namespace Intermediate_CSharp
 {
     public class Person
     {
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; private set; }
 
         public int Age
         {

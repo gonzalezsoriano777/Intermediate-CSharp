@@ -31,7 +31,6 @@ namespace Intermediate_CSharp
 
             // using properties that include getter and setter
             var person = new Person();
-            person.BirthDate = (new DateTime(1981, 1, 3));
             Console.WriteLine(person.Age);
 
             // used the try method to run lines.. of code
