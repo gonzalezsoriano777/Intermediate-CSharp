@@ -18,12 +18,16 @@ namespace Intermediate_CSharp
     {
         static void Main(string[] args)
         {
+
+            #region Object Initializer
             var human = new Human
             {
                 FirstName = "Hector",
                 LastName = "Gonzalez"
             };
+            #endregion
 
+            #region working with getter and setter to find the initial age
             // set birthdate and print in console
             var birth = new Birth();
             birth.SetBirthDate(new DateTime(2006, 3, 1));
@@ -32,13 +36,19 @@ namespace Intermediate_CSharp
             // using properties that include getter and setter
             var person = new Person(new DateTime(1998, 1, 3));
             Console.WriteLine(person.Age);
+            #endregion
 
+
+            #region Working with indexes and prac. with key prop. and values
             var cookie = new Indexers();
 
             // this grabs the key string and what that strings value will be
             cookie["name"] = "Erickson";
             Console.WriteLine(cookie["name"]);
 
+            #endregion
+
+            #region Defensive Programming
             // used the try method to run lines.. of code
 
             try
@@ -62,7 +72,7 @@ namespace Intermediate_CSharp
                 Console.WriteLine("Unexpected error has been detected, no value has been shown..");
             }
 
-            
+            #endregion
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
         }
     }
@@ -114,5 +124,36 @@ namespace Intermediate_CSharp
             return _birthdate;
         }
 
+    }
+
+
+    public class DbMigrator
+    {
+        private readonly Logger _logger;
+
+        public DbMigrator(Logger logger)
+        {
+            _logger = logger;
+        }
+
+        public void Migrator()
+        {
+            _logger.Log("Writing a message for the first time in the world");
+        }
+
+        public class Installer
+        {
+            private readonly Logger _logger;
+
+            public Installer(Logger logger)
+            {
+                _logger = logger;
+            }
+
+            public void Install()
+            {
+                _logger.Log("Another message added where this one has another class using it");
+            }
+        }
     }
 }
