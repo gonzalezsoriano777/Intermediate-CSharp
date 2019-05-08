@@ -30,8 +30,14 @@ namespace Intermediate_CSharp
             Console.WriteLine(birth.GetBirthDate());
 
             // using properties that include getter and setter
-            var person = new Person();
+            var person = new Person(new DateTime(1998, 1, 3));
             Console.WriteLine(person.Age);
+
+            var cookie = new Indexers();
+
+            // this grabs the key string and what that strings value will be
+            cookie["name"] = "Erickson";
+            Console.WriteLine(cookie["name"]);
 
             // used the try method to run lines.. of code
 
