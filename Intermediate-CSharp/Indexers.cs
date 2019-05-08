@@ -8,6 +8,7 @@ namespace Intermediate_CSharp
 {
     public class Indexers
     {
+        // generic class w/ generic parameters that store a key of typ. string & value of typ. string
         private readonly Dictionary<string, string> _dictionary;
 
         public Indexers()
