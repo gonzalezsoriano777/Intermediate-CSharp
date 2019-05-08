@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
+    // simplfied of getter and setter.. getter gets the variable and setter gets the value of the setter
+
     public class Person
     {
+        // just practices of using getter & setter
+        public string Name { get; set; }
+        public string Username { get; set; }
+
         public DateTime BirthDate { get; private set; }
+
+        public Person(DateTime birthdate)
+        {
+            BirthDate = birthdate;
+        }
 
         public int Age
         {
