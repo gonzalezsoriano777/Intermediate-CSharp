@@ -43,7 +43,7 @@ namespace Intermediate_CSharp
 
                 //test ran to see if were able to detect no value once arg. null is implemented
                 point.Move(null);
-                Console.WriteLine("The Point of both ( X:{0} & Y:{1})", point.X, point.Y);
+                Console.WriteLine("The Point of both (X:{0} & Y:{1})", point.X, point.Y);
 
                 point.Move(new Point(100, 200));
                 Console.WriteLine("The new points of both (X:{0} & Y:{1})", point.X, point.Y);
