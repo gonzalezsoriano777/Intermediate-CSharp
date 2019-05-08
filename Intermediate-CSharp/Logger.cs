@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
+    // Logger used for working with coupling, working with Composition
     public class Logger
     {
         public void Log(string message)

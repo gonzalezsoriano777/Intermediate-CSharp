@@ -18,6 +18,20 @@ namespace Intermediate_CSharp
     {
         static void Main(string[] args)
         {
+            #region Created 2 classes that are flexible and able to recieve different messages from the same method in the same class
+
+            var dbMigrator = new DbMigrator(new Logger());
+
+            var logger = new Logger();
+            var install = new Installer(logger);
+
+            dbMigrator.Migrator();
+
+            install.Install();
+
+            Console.WriteLine();
+
+            #endregion
 
             #region Object Initializer
             var human = new Human
@@ -49,6 +63,7 @@ namespace Intermediate_CSharp
             #endregion
 
             #region Defensive Programming
+
             // used the try method to run lines.. of code
 
             try
@@ -73,7 +88,10 @@ namespace Intermediate_CSharp
             }
 
             #endregion
+            
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
+
+
         }
     }
 
@@ -126,7 +144,7 @@ namespace Intermediate_CSharp
 
     }
 
-
+    
     public class DbMigrator
     {
         private readonly Logger _logger;
@@ -140,20 +158,20 @@ namespace Intermediate_CSharp
         {
             _logger.Log("Writing a message for the first time in the world");
         }
+    }
 
-        public class Installer
+    public class Installer
+    {
+        private readonly Logger _logger;
+
+        public Installer(Logger logger)
         {
-            private readonly Logger _logger;
+            _logger = logger;
+        }
 
-            public Installer(Logger logger)
-            {
-                _logger = logger;
-            }
-
-            public void Install()
-            {
-                _logger.Log("Another message added where this one has another class using it");
-            }
+        public void Install()
+        {
+            _logger.Log("Another message added where this one has another class using it");
         }
     }
 }
