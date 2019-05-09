@@ -88,6 +88,8 @@ namespace Intermediate_CSharp
             }
 
             #endregion
+
+            var car = new Cars("XX235YS");
             
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
 
@@ -172,6 +174,18 @@ namespace Intermediate_CSharp
         public void Install()
         {
             _logger.Log("Another message added where this one has another class using it");
+        }
+    }
+
+    public class Cars
+    {
+
+        // the keyword "base" is used for 
+
+        public Cars(string registrationNumber)
+            : base (registrationNumber)
+        {
+            Console.WriteLine("The Car is being initialized {0}", registrationNumber);
         }
     }
 }
