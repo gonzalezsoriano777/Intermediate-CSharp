@@ -14,6 +14,8 @@ namespace Intermediate_CSharp
         public Vehicle(string registrationNumber)
         {
             _registrationNumber = registrationNumber;
+
+            Console.WriteLine("The Vehicle is being initialized {0}", registrationNumber);
         }
     }
 }
