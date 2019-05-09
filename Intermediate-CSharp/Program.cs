@@ -156,7 +156,7 @@ namespace Intermediate_CSharp
 
         public void Migrator()
         {
-            _logger.Log("Writing a message for the first time in the world");
+            _logger.Log("Writing a message for the first time in the world!");
         }
     }
 
