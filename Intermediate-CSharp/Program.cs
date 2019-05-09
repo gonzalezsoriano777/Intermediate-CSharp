@@ -89,6 +89,8 @@ namespace Intermediate_CSharp
 
             #endregion
 
+
+            // used for the console, instantiating object
             var car = new Cars("XX235YS");
             
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
