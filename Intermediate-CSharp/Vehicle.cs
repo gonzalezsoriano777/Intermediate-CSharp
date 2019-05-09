@@ -15,7 +15,9 @@ namespace Intermediate_CSharp
         {
             _registrationNumber = registrationNumber;
 
-            Console.WriteLine("The Vehicle is being initialized {0}", registrationNumber);
+            Console.WriteLine();
+
+            Console.WriteLine("The Vehicle is being initialized. Finalized the # is {0}", registrationNumber);
         }
     }
 }
