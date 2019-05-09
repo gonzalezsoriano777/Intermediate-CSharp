@@ -177,7 +177,8 @@ namespace Intermediate_CSharp
         }
     }
 
-    public class Cars
+    // this will consist of the car and it's registration number being initialized from the Vehicle itself
+    public class Cars : Vehicle
     {
 
         // the keyword "base" is used for 
