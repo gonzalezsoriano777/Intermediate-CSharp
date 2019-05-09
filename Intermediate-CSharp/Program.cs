@@ -181,12 +181,14 @@ namespace Intermediate_CSharp
     public class Cars : Vehicle
     {
 
-        // the keyword "base" is used for 
+        // the keyword "base" is used for grabbing the field "registrationNumber" from the vehicle and implementing the field to this class
+        
 
         public Cars(string registrationNumber)
+            // overall initializing the field use in one class to another, in this case if the field is private
             : base (registrationNumber)
         {
-            Console.WriteLine("The Car is being initialized {0}", registrationNumber);
+            Console.WriteLine("The Car is being initialized. Complete the registration # is {0}", registrationNumber);
         }
     }
 }
