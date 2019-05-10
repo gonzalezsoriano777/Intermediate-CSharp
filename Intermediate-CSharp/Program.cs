@@ -94,11 +94,14 @@ namespace Intermediate_CSharp
             var car = new Cars("XX235YS");
 
             #region
+
+
             var dbMigratorv2 = new DbMigratorv2(new ConsoleLogger());
             dbMigratorv2.Migrate();
+            #endregion
 
             #region Working with overriding different classes that have different shapes
-          
+
             var shapes = new List<Shapes>();
             shapes.Add(new Circle());
             shapes.Add(new Rectangle());
