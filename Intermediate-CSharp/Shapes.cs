@@ -6,6 +6,31 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
+
+    public class Circle : Shapes
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("This shape is a circle");
+        }
+    }
+
+    public class Rectangle : Shapes
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("This shape is a rectangle");
+        }
+    }
+
+    public class Triangle : Shapes
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("This shape is a Triangle");
+        }
+    }
+
     public class Shapes
     {
         // created fields that will be used for the sized of the shapes
