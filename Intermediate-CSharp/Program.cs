@@ -92,6 +92,14 @@ namespace Intermediate_CSharp
 
             // instantiating object that needs a registration# to be called in console
             var car = new Cars("XX235YS");
+
+            // instantiating the obj. which contains the list of shapes
+            var shapes = new List<Shapes>();
+            shapes.Add(new Circle());
+            shapes.Add(new Rectangle());
+            shapes.Add(new Triangle());
+
+            var listShapes = new ListingShapes();
             
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
 
