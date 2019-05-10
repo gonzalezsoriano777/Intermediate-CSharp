@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CouplingPractice\Indexers.cs" />
+    <Compile Include="DbMigratorv2.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="Method Overriding\Canvas.cs" />
     <Compile Include="CouplingPractice\Logger.cs" />
     <Compile Include="Person.cs" />
