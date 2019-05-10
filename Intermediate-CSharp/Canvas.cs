@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
-   public class ListingShapes
+   public class Canvas
     {
         public void DrawShapes(List<Shapes> shapes)
         {

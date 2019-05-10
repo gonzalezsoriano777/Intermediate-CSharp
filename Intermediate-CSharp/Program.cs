@@ -94,17 +94,14 @@ namespace Intermediate_CSharp
             var car = new Cars("XX235YS");
 
             #region Working with overriding different classes that have different shapes
-            // instantiating the obj. which contains the list of shapes
+          
             var shapes = new List<Shapes>();
-
-            // Using the add method to add the shapes
             shapes.Add(new Circle());
             shapes.Add(new Rectangle());
             shapes.Add(new Triangle());
 
-            
-            var listShapes = new ListingShapes();
-            listShapes.DrawShapes(shapes);
+            var canvas = new Canvas();
+            canvas.DrawShapes(shapes);
             #endregion
 
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);

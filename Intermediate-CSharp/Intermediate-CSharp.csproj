@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Indexers.cs" />
-    <Compile Include="ListingShapes.cs" />
+    <Compile Include="Canvas.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
