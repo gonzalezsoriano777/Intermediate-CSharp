@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Indexers.cs" />
+    <Compile Include="CouplingPractice\Indexers.cs" />
     <Compile Include="Method Overriding\Canvas.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="CouplingPractice\Logger.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
