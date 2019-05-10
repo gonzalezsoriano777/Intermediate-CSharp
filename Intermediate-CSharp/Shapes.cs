@@ -41,6 +41,7 @@ namespace Intermediate_CSharp
         public int Width { get; set; }
         public int Height { get; set; }
 
+        // has no line of data but used for the overriden of other classes. Which is why it's virtual
         public virtual void Draw()
         {
 
