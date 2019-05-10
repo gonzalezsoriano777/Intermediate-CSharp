@@ -12,7 +12,7 @@ namespace Intermediate_CSharp
         public override void Draw()
         {
             Console.WriteLine();
-            Console.WriteLine("This shape is a circle");
+            Console.WriteLine("This shape is a circle!");
         }
     }
 
