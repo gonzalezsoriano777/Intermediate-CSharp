@@ -52,7 +52,7 @@ namespace Intermediate_CSharp
             Console.WriteLine(person.Age);
             #endregion
 
-
+            
             #region Working with indexes and prac. with key prop. and values
             var cookie = new Indexers();
 
@@ -92,6 +92,10 @@ namespace Intermediate_CSharp
 
             // instantiating object that needs a registration# to be called in console
             var car = new Cars("XX235YS");
+
+            #region
+            var dbMigratorv2 = new DbMigratorv2(new ConsoleLogger());
+            dbMigratorv2.Migrate();
 
             #region Working with overriding different classes that have different shapes
           
