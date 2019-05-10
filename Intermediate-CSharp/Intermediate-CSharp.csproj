@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleLogger.cs" />
     <Compile Include="CouplingPractice\Indexers.cs" />
     <Compile Include="DbMigratorv2.cs" />
     <Compile Include="ILogger.cs" />
