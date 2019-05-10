@@ -31,6 +31,7 @@ namespace Intermediate_CSharp
         public override void Draw()
         {
             Console.WriteLine("This shape is a Triangle");
+            Console.WriteLine();
         }
     }
 

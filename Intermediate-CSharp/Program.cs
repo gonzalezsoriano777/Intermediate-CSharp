@@ -100,6 +100,7 @@ namespace Intermediate_CSharp
             shapes.Add(new Triangle());
 
             var listShapes = new ListingShapes();
+            listShapes.DrawShapes(shapes);
             
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
 
