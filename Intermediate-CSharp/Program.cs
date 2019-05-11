@@ -93,12 +93,7 @@ namespace Intermediate_CSharp
             // instantiating object that needs a registration# to be called in console
             var car = new Cars("XX235YS");
 
-            #region
-
-
-            var dbMigratorv2 = new DbMigratorv2(new ConsoleLogger());
-            dbMigratorv2.Migrate();
-            #endregion
+            
 
             #region Working with overriding different classes that have different shapes
 
@@ -109,6 +104,13 @@ namespace Intermediate_CSharp
 
             var canvas = new Canvas();
             canvas.DrawShapes(shapes);
+            #endregion
+
+            #region
+
+
+            var dbMigratorv2 = new DbMigratorv2(new ConsoleLogger());
+            dbMigratorv2.Migrate();
             #endregion
 
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);

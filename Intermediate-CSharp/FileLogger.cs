@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Intermediate_CSharp
 {
-    public class FileLogger : ILogger
+    public class FileLogger
     {
         private readonly string _path;
 
@@ -17,19 +18,20 @@ namespace Intermediate_CSharp
 
         public void LogError(string message)
         {
-            using ()
+            using (var streamWriter = new StreamWriter(_path, true))
             {
-
-            } 
-            
+                streamWriter.WriteLine("ERROR: " + message);
+            }
         }
 
         public void LogInfo(string message)
         {
-            using ()
+            using(var streamWriter = new StreamWriter(_path, true))
             {
-
+                streamWriter.WriteLine("ERROR: " + message);
             }
         }
+
+       
     }
 }
