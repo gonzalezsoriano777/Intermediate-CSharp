@@ -17,7 +17,8 @@ namespace Intermediate_CSharp
         }
 
         public void LogError(string message)
-        {
+        { 
+            // writing data to a file
             using (var streamWriter = new StreamWriter(_path, true))
             {
                 streamWriter.WriteLine("ERROR: " + message);
