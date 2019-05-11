@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+// this is the user namespace used for grabbing the StreamWriter method
 using System.IO;
 
 namespace Intermediate_CSharp
