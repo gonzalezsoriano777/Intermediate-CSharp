@@ -15,30 +15,32 @@ namespace Intermediate_CSharp
 
         public FileLogger(string path)
         {
-            _path = path;      
+            _path = path;
         }
 
         public void LogError(string message)
-        { 
-            // writing data to a file
-            using (var streamWriter = new StreamWriter(_path, true))
-            {
-                streamWriter.WriteLine("ERROR: " + message);
-                
-                // freeing external resources that are not managed by CLR
+        {
+            // easier way to numerate through both LogError and LogInfo
+            Log(message, "ERROR");
 
-                //streamWriter.Dispose();
-            }
+            // freeing external resources that are not managed by CLR
+
+            //streamWriter.Dispose();        
         }
 
         public void LogInfo(string message)
         {
-            using(var streamWriter = new StreamWriter(_path, true))
+            Log(message, "INFO");
+        }
+
+        private void Log(string message, string messageType)
+        {
+            // writing data to the file
+            using (var streamWriter = new StreamWriter(_path, true))
             {
-                streamWriter.WriteLine("ERROR: " + message);
+                streamWriter.WriteLine(messageType + ": " + message);
             }
         }
 
-       
     }
 }
