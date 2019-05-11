@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleLogger.cs" />
+    <Compile Include="Interfaces-Practice\ConsoleLogger.cs" />
     <Compile Include="CouplingPractice\Indexers.cs" />
-    <Compile Include="DbMigratorv2.cs" />
-    <Compile Include="FileLogger.cs" />
-    <Compile Include="ILogger.cs" />
+    <Compile Include="Interfaces-Practice\DbMigratorv2.cs" />
+    <Compile Include="Interfaces-Practice\FileLogger.cs" />
+    <Compile Include="Interfaces-Practice\ILogger.cs" />
     <Compile Include="Method Overriding\Canvas.cs" />
     <Compile Include="CouplingPractice\Logger.cs" />
     <Compile Include="Person.cs" />
