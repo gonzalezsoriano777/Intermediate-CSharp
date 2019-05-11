@@ -10,7 +10,7 @@ using System.IO;
 namespace Intermediate_CSharp
 {
     // log messages into a file
-    public class FileLogger
+    public class FileLogger : ILogger
     {
         private readonly string _path;
 

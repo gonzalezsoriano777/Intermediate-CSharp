@@ -106,12 +106,14 @@ namespace Intermediate_CSharp
             canvas.DrawShapes(shapes);
             #endregion
 
-            #region
+            #region Working with Interfaces Extensibility, changing it's behaviors 
 
-            // again this is called to log messages through the console
+            // log messages through the console
             var dbMigratorv2 = new DbMigratorv2(new ConsoleLogger());
 
-            var fileMigrator = new DbMigratorv2(new FileLogger());
+            
+            // logs messages through a file
+            // var dbMigratorv2 = new DbMigratorv2(new FileLogger("C:\\Go\\log.txt"));
 
 
             dbMigratorv2.Migrate();
