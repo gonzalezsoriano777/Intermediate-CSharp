@@ -24,6 +24,10 @@ namespace Intermediate_CSharp
             using (var streamWriter = new StreamWriter(_path, true))
             {
                 streamWriter.WriteLine("ERROR: " + message);
+                
+                // freeing external resources that are not managed by CLR
+
+                //streamWriter.Dispose();
             }
         }
 
