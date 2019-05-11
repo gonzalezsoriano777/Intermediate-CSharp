@@ -108,8 +108,12 @@ namespace Intermediate_CSharp
 
             #region
 
-
+            // again this is called to log messages through the console
             var dbMigratorv2 = new DbMigratorv2(new ConsoleLogger());
+
+            var fileMigrator = new DbMigratorv2(new FileLogger());
+
+
             dbMigratorv2.Migrate();
             #endregion
 

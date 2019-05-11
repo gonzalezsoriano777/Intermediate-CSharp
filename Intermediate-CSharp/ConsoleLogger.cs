@@ -23,6 +23,7 @@ namespace Intermediate_CSharp
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(message);
+            Console.WriteLine();
         }
     }
 }
