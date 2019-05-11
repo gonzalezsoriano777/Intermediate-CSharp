@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
-    // this will be response toward the behavior once called to the console
+    // behavior responce once called to the console
+    // logs messages to the console
     public class ConsoleLogger : ILogger
     {
 

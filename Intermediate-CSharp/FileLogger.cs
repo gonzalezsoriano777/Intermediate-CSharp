@@ -9,6 +9,7 @@ using System.IO;
 
 namespace Intermediate_CSharp
 {
+    // log messages into a file
     public class FileLogger
     {
         private readonly string _path;
@@ -35,7 +36,7 @@ namespace Intermediate_CSharp
 
         private void Log(string message, string messageType)
         {
-            // writing data to the file
+            // writing data to a file
             using (var streamWriter = new StreamWriter(_path, true))
             {
                 streamWriter.WriteLine(messageType + ": " + message);

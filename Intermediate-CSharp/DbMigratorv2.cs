@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
-
+    // used to migrate through messages in db 
     public class DbMigratorv2
     {
         // created a private field that will be used for the migration of the database
