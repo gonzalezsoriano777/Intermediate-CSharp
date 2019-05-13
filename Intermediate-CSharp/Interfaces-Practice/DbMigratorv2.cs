@@ -21,11 +21,11 @@ namespace Intermediate_CSharp
         public void Migrate()
         {
             // the purpose of this practice is that we work w/ the applications behavior and be able change the way it processes
-            _logger.LogInfo("Migration started at {0}" + DateTime.Now);
+            _logger.LogInfo("Migration started at.. " + DateTime.Now);
 
             // Overall details of the migration of the db
 
-            _logger.LogInfo("Migration finished at {0}" + DateTime.Now);
+            _logger.LogInfo("Migration finished at..  " + DateTime.Now);
         }
 
     }
