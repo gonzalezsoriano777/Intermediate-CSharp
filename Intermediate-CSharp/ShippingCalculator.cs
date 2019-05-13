@@ -13,6 +13,8 @@ namespace Intermediate_CSharp
         {
             // Once totalPrice for product is shown, shipping price will be declared if price is below $30
             if (order.TotalPrice > 30f)
+
+                // if price below 30 then 10% of shipping will be added to totalPrice
                 return order.TotalPrice * 0.1f;
 
                 // but if price is above 30 then it's free shipping
