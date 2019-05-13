@@ -50,11 +50,15 @@
     <Compile Include="Interfaces-Practice\ILogger.cs" />
     <Compile Include="Method Overriding\Canvas.cs" />
     <Compile Include="CouplingPractice\Logger.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderProcessor.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Method Overriding\Shapes.cs" />
     <Compile Include="Method Overriding\ShapeTypes.cs" />
+    <Compile Include="Shipment.cs" />
+    <Compile Include="ShippingCalculator.cs" />
     <Compile Include="Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
