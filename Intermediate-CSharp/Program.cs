@@ -91,7 +91,7 @@ namespace Intermediate_CSharp
 
 
             // instantiating object that needs a registration# to be called in console
-            var car = new Cars("XX235YS");
+            var car = new Cars("XX235YSS");
 
             
 
