@@ -119,6 +119,10 @@ namespace Intermediate_CSharp
             dbMigratorv2.Migrate();
             #endregion
 
+            #region Working with Interfaces Testability,
+            Console.WriteLine("Hello World");
+            #endregion
+
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
 
 
