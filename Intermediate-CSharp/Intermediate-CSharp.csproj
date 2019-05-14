@@ -50,22 +50,20 @@
     <Compile Include="Interface Extensibility Practice\ILogger.cs" />
     <Compile Include="Method Overriding\Canvas.cs" />
     <Compile Include="CouplingPractice\Logger.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderProcessor.cs" />
+    <Compile Include="Interface Testability Practice\Order.cs" />
+    <Compile Include="Interface Testability Practice\OrderProcessor.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Method Overriding\Shapes.cs" />
     <Compile Include="Method Overriding\ShapeTypes.cs" />
-    <Compile Include="Shipment.cs" />
-    <Compile Include="ShippingCalculator.cs" />
+    <Compile Include="Interface Testability Practice\Shipment.cs" />
+    <Compile Include="Interface Testability Practice\ShippingCalculator.cs" />
     <Compile Include="Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interface Testability Practice\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
