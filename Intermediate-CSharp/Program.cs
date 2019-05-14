@@ -93,7 +93,10 @@ namespace Intermediate_CSharp
             // instantiating object that needs a registration# to be called in console
             var car = new Cars("XX235YSS");
 
-            
+            #region Working with Interfaces Testability,
+            var orderProcessor = new OrderProcessor(new ShippingCalculator());
+            orderProcessor.
+            #endregion
 
             #region Working with overriding different classes that have different shapes
 
@@ -117,10 +120,6 @@ namespace Intermediate_CSharp
 
 
             dbMigratorv2.Migrate();
-            #endregion
-
-            #region Working with Interfaces Testability,
-            Console.WriteLine("Hello World");
             #endregion
 
             // Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
