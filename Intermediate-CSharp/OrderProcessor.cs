@@ -8,16 +8,19 @@ namespace Intermediate_CSharp
 {
     public class OrderProcessor
     {
-        private readonly IShippingCalculator _shippingCalculator;    
+        private readonly IShippingCalculator _shippingCalculator;
+        
 
         public OrderProcessor(IShippingCalculator shippingCalculator)
         {
             _shippingCalculator = shippingCalculator;
         }
 
+        
+
         public void Process(Order order)
         {
-            if (order.isShipping)
+            if (order.isShipped)
 
                 // used for defensive programming 
                 throw new InvalidOperationException("Order is already processing");
@@ -25,7 +28,7 @@ namespace Intermediate_CSharp
             order.Shipment = new Shipment
             {
                 Cost = _shippingCalculator.CalculateShipping(order),
-                ShippingDate = DateTime.Today.AddDays(1);
+                ShippingDate = DateTime.Today.AddDays(1)
             };
 
                 

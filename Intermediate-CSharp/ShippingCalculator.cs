@@ -11,7 +11,7 @@ namespace Intermediate_CSharp
         float CalculateShipping(Order order);
     }
 
-    public class ShippingCalculator
+    public class ShippingCalculator : IShippingCalculator
     {
         // this will include the price if there is cents included
         public float CalculateShipping(Order order)
