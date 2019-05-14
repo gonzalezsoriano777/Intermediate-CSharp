@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
+    public interface IShippingCalculator
+    {
+        float CalculateShipping(Order order);
+    }
+
     public class ShippingCalculator
     {
         // this will include the price if there is cents included
