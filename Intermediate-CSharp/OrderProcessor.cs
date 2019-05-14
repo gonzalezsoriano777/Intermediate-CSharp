@@ -15,10 +15,12 @@ namespace Intermediate_CSharp
             _shippingCalculator = shippingCalculator;
         }
 
-        public void Order(Order order){
+        public void Process(Order order)
+        {
             if (order.isShipping)
             {
                 throw InvalidOperationException("Order is already processing");
             }
+        }
     }
 }

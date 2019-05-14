@@ -94,8 +94,11 @@ namespace Intermediate_CSharp
             var car = new Cars("XX235YSS");
 
             #region Working with Interfaces Testability,
+
             var orderProcessor = new OrderProcessor(new ShippingCalculator());
-            orderProcessor.
+            var order = new Order { DatePlaced = DateTime.Now, TotalPrice = 100f};
+            orderProcessor.Process(order);
+
             #endregion
 
             #region Working with overriding different classes that have different shapes
