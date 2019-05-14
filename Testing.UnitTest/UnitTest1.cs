@@ -12,7 +12,7 @@ namespace Testing.UnitTest
         [TestMethod]
         public void Process_OrderIsAlreadyShipped_ThrowAnException()
         {
-            var orderProcessor = new OrderProcessor();
+            var orderProcessor = new OrderProcessor
         }
     }
 }
