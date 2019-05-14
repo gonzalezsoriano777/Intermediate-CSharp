@@ -23,6 +23,17 @@ namespace Testing.UnitTest
             orderProcessor.Process(order);
         }
 
+        [TestMethod]
+        public void Process_OrderIsNotShipped_ShouldSetTheShipmentPropertyOfOrder()
+        {
+            var orderProcessor = new OrderProcessor(new FakeShippingCalculator());
+            var order = new Order();
+
+            orderProcessor.Process(order);
+
+            Assert.
+        }
+
 
     }
 
