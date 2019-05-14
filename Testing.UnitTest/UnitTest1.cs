@@ -11,9 +11,16 @@ namespace Testing.UnitTest
         // METHODNAME_CONDITION_EXPECTATION
 
         [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
         public void Process_OrderIsAlreadyShipped_ThrowsAnException()
         {
             var orderProcessor = new OrderProcessor(new FakeShippingCalculator());
+            var order = new Order
+            {
+                Shipment = new Shipment()
+            };
+
+            orderProcessor.Process(order);
         }
 
 
