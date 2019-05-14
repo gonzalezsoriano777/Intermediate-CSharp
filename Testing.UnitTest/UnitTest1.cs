@@ -31,7 +31,7 @@ namespace Testing.UnitTest
 
             orderProcessor.Process(order);
 
-            Assert.
+            Assert.IsTrue(order.isShipped);
         }
 
 
@@ -41,7 +41,7 @@ namespace Testing.UnitTest
     {
         public float CalculateShipping(Order order)
         {
-            throw new NotImplementedException();
+            return 1;
         }
 
     }
