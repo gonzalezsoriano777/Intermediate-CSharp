@@ -1,4 +1,5 @@
 ﻿using System;
+using Intermediate_CSharp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Testing.UnitTest
@@ -10,9 +11,20 @@ namespace Testing.UnitTest
         // METHODNAME_CONDITION_EXPECTATION
 
         [TestMethod]
-        public void Process_OrderIsAlreadyShipped_ThrowAnException()
+        public void Process_OrderIsAlreadyShipped_ThrowsAnException()
         {
-            var orderProcessor = new OrderProcessor
+            var orderProcessor = new OrderProcessor();
         }
+
+
+    }
+
+    public class FakeShippingCalculator : IShippingCalculator
+    {
+        public float CalculateShipping(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
