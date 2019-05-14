@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces-Practice\ConsoleLogger.cs" />
+    <Compile Include="Interface Extensibility Practice\ConsoleLogger.cs" />
     <Compile Include="CouplingPractice\Indexers.cs" />
-    <Compile Include="Interfaces-Practice\DbMigratorv2.cs" />
-    <Compile Include="Interfaces-Practice\FileLogger.cs" />
-    <Compile Include="Interfaces-Practice\ILogger.cs" />
+    <Compile Include="Interface Extensibility Practice\DbMigratorv2.cs" />
+    <Compile Include="Interface Extensibility Practice\FileLogger.cs" />
+    <Compile Include="Interface Extensibility Practice\ILogger.cs" />
     <Compile Include="Method Overriding\Canvas.cs" />
     <Compile Include="CouplingPractice\Logger.cs" />
     <Compile Include="Order.cs" />
@@ -63,6 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interface Testability Practice\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

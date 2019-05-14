@@ -10,8 +10,9 @@ namespace Testing.UnitTest
         // METHODNAME_CONDITION_EXPECTATION
 
         [TestMethod]
-        public void TestMethod1()
+        public void Process_OrderIsAlreadyShipped_ThrowAnException()
         {
+            var orderProcessor = new OrderProcessor();
         }
     }
 }
