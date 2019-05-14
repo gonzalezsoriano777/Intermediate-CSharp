@@ -8,9 +8,9 @@ namespace Intermediate_CSharp
 {
     public class OrderProcessor
     {
-        private readonly ShippingCalculator _shippingCalculator;    
+        private readonly IShippingCalculator _shippingCalculator;    
 
-        public OrderProcessor(ShippingCalculator shippingCalculator)
+        public OrderProcessor(IShippingCalculator shippingCalculator)
         {
             _shippingCalculator = shippingCalculator;
         }
