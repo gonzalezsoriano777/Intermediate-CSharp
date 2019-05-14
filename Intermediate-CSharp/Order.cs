@@ -10,9 +10,13 @@ namespace Intermediate_CSharp
     {
         public int ID { get; set; }
         public DateTime DatePlaced { get; set; }
-        public Shipment shipment { get; set; }
+        public Shipment Shipment { get; set; }
         public float TotalPrice { get; set; }
         
+        public bool isShipped
+        {
+            get { return Shipment != null;  }
+        }
         
     }
 }
