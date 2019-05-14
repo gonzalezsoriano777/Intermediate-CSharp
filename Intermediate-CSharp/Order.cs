@@ -13,7 +13,7 @@ namespace Intermediate_CSharp
         public Shipment Shipment { get; set; }
         public float TotalPrice { get; set; }
         
-        public bool isShipped
+        public bool isShipping
         {
             get { return Shipment != null;  }
         }

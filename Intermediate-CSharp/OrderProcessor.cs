@@ -18,7 +18,9 @@ namespace Intermediate_CSharp
         public void Process(Order order)
         {
             if (order.isShipping)
-                throw InvalidOperationException("Order is already processing");
+
+                // used for defensive programming 
+                throw new InvalidOperationException("Order is already processing");
 
             order.Shipment = new Shipment
             {
