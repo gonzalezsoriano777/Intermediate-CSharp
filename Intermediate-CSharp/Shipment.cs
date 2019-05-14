@@ -8,6 +8,7 @@ namespace Intermediate_CSharp
 {
     public class Shipment
     {
+        // shipment detailes before finanlized
         public float Cost { get; set; }
         public DateTime ShippingDate { get; set; }
     }

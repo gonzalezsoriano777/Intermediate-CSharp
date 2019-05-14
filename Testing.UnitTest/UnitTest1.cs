@@ -10,6 +10,7 @@ namespace Testing.UnitTest
 
         // METHODNAME_CONDITION_EXPECTATION
 
+       
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void Process_OrderIsAlreadyShipped_ThrowsAnException()
@@ -23,6 +24,8 @@ namespace Testing.UnitTest
             orderProcessor.Process(order);
         }
 
+        // testing methods for different situations or processes
+
         [TestMethod]
         public void Process_OrderIsNotShipped_ShouldSetTheShipmentPropertyOfOrder()
         {
@@ -31,11 +34,16 @@ namespace Testing.UnitTest
 
             orderProcessor.Process(order);
 
+            // *
             Assert.IsTrue(order.isShipped);
+            Assert.AreEqual(1, order.Shipment.Cost);
+            Assert.AreEqual(DateTime.Today.AddDays(1), order.Shipment.ShippingDate);
         }
 
 
     }
+
+    // Used if order was not successfully shipped and need to ship prop. of order
 
     public class FakeShippingCalculator : IShippingCalculator
     {

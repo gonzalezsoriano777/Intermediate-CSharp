@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Intermediate_CSharp
 {
+    // provides the capability that the class should provide
     public interface IShippingCalculator
     {
         float CalculateShipping(Order order);
     }
+
 
     public class ShippingCalculator : IShippingCalculator
     {

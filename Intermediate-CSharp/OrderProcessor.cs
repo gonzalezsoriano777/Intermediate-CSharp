@@ -8,6 +8,7 @@ namespace Intermediate_CSharp
 {
     public class OrderProcessor
     {
+        // used to make OrderProcessor isolated for unit testing, by introducing an interface, making it also not dependent on concrete classes
         private readonly IShippingCalculator _shippingCalculator;
         
 
@@ -25,6 +26,7 @@ namespace Intermediate_CSharp
                 // used for defensive programming 
                 throw new InvalidOperationException("Order is already processing");
 
+            // if order is ready to be shipped then it will show the cost and shipping date
             order.Shipment = new Shipment
             {
                 Cost = _shippingCalculator.CalculateShipping(order),
